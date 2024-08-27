@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/img/pod-grande.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__img"
+        src="./src/img/pod-grande.png"
+        alt="Logo en pixel art"
+      />
+      <h1 class="header__title">Encode/Decode</h1>
+    </header>
+    <main class="main">
+      <section class="main__content">
+        <textarea
+          name="content__text"
+          id="content__text"
+          placeholder="Itroduzca el texto a encriptar o desencriptar"
+        ></textarea>
+        <div class="content__warning">
+          <div class="content__warning--info">
+            <img
+              class="warning__sign"
+              src="./src/img/signo-exclamacion.png"
+              alt="Icono pequeño de un signo de exclamación pixeleado"
+            />
+            <p class="warning__info">
+              Tenga en cuenta que solo debe ingresar texto en minúsculas y sin
+              acentos
+            </p>
+          </div>
+        </div>
+        <div class="content__button">
+          <a class="button button--encrypt">Encriptar</a>
+          <a class="button button--decrypt">Desencriptar</a>
+        </div>
+      </section>
+      <aside class="aside">
+        <img
+          class="aside__img"
+          src="./src/img/pc.png"
+          alt="Computadora en pixel art"
+        />
+        <h2 class="aside__title">Aun no hay procesado</h2>
+        <p class="aside__info">Ingrese el texto a encriptar o desencriptar</p>
+        <a class="button button--copy hide">Copiar</a>
+      </aside>
+    </main>
+    <footer class="footer">
+      <p class="footer__info">&copy; Julian Choque</p>
+      <div class="footer__red">
+        <a
+          class="red__git"
+          href="https://github.com/JulianCamiloChoqueCharris?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
+        <a
+          class="red__link"
+          href="https://www.linkedin.com/in/julian-camilo-choque-charris/"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
+      </div>
+    </footer>
+    <script src="./src/js/app.js" type="module"></script>
+  </body>
+</html>
